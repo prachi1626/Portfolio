@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ═══ NAV ═══ -->
+    <nav>
+        <div class="logo">PRACHI PATEL</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cases">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="nav-resume" href="assests/Prachi_Resume.pdf" target="_blank">View Resume</a></li>
+        </ul>
+        <div class="hamburger" id="ham" onclick="toggleMenu()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ═══ MOBILE MENU ═══ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" onclick="closeMenu()">Home</a>
+        <div class="menu-line"></div>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <div class="menu-line"></div>
+        <a href="#cases" onclick="closeMenu()">Work</a>
+        <div class="menu-line"></div>
+        <a href="#skills" onclick="closeMenu()">Skills</a>
+        <div class="menu-line"></div>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+        <a href="/assests/Prachi_Resume.pdf" class="mobile-resume" onclick="closeMenu()" target="_blank">View Resume</a>
+    </div>
+
+    <!-- ═══ HERO ═══ -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="grid-lines"></div>
+            <div class="orb orb1"></div>
+            <div class="orb orb2"></div>
+            <div class="orb orb3"></div>
+        </div>
+        <div class="hero-content">
+
+
+            <h1 class="hero-title"><span class="gradient-text">UX/UI Designer</span><br>&amp; Interaction Expert</h1>
+            <p class="hero-sub">I design intuitive, user-centered digital experiences —<br>from research and wireframing
+                to high-fidelity prototypes that delight users.</p>
+            <div class="hero-cta">
+                <button class="btn-primary"
+                    onclick="document.getElementById('cases').scrollIntoView({behavior:'smooth'})">View My Work</button>
+                <button class="btn-secondary"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Let's
+                    Connect</button>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <p class="scroll-label">Scroll</p>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-visual reveal">
+                <div class="avatar-frame">
+                    <div class="avatar-ring"></div>🎨
+                </div>
+                <div class="stat-chips">
+                    <div class="chip"><span>BE</span> Comp. Engg.</div>
+                    <div class="chip"><span>4+</span> Projects</div>
+                    <div class="chip"><span>Elsner</span> Intern</div>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <h2>Creating experiences that<br><span class="gradient-text">just feel right</span></h2>
+                <p>I'm Prachi Patel — a UX/UI Designer from Gandhinagar, Gujarat, currently pursuing BE in Computer
+                    Engineering
+                    at LDRP Institute of Technology and Research (2022–2026).</p>
+                <p>I'm passionate about designing digital products that are both beautiful and deeply usable. My process
+                    is rooted in user research and information architecture, and I care about the details that make an
+                    interface feel effortless.</p>
+                <p>At Elsner Technologies, I contributed to real-world product design — crafting wireframes, user flows,
+                    and high-fidelity UIs in Figma while collaborating with developers to bring designs to life.</p>
+                <div class="tag-row">
+                    <span class="tag t-p">Figma</span><span class="tag t-b">Canva</span><span class="tag t-k">HTML &amp;
+                        CSS</span>
+                    <span class="tag t-p">User Research</span><span class="tag t-b">Wireframing</span>
+                    <span class="tag t-k">Prototyping</span><span class="tag t-p">Design Systems</span><span
+                        class="tag t-b">Usability Testing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CASE STUDIES ═══ -->
+    <section id="cases">
+        <div class="section-header reveal">
+            <p class="section-label">Selected Work</p>
+            <h2 class="section-title">Case Studies</h2>
+            <p class="section-sub">Projects that shaped my design thinking</p>
+        </div>
+        <div class="cases-grid">
+
+            <div class="case-card" style="--d1:.30s;--d2:.38s;--d3:.46s;--d4:.54s;--d5:.62s">
+                <div class="case-img">
+                    <img src="assests/profreelance.jpeg" alt="Elsner Web Design">
+                    <div class="case-placeholder"><span class="ph-emoji">🌐</span><span class="ph-text">Add cover
+                            image</span></div>
+                    <div class="case-img-fade"></div>
+                </div>
+                <div class="case-body">
+
+                    <h3>Profreelance Management Portal</h3>
+                    <p class="case-desc">A comprehensive SaaS dashboard that helps freelancers manage invoices,
+                        deadlines, and earnings in one intuitive workspace, so they can focus on the work they’re paid
+                        to do.</p>
+                    <div class="case-pills"><span class="pill">Design Systems</span><span class="pill">Responsive
+                            UI</span><span class="pill">Components</span></div>
+                    <a class="case-link"
+                        href="https://www.behance.net/gallery/251066467/Profreelance-Management-Portal">View case study
+                        →</a>
+                </div>
+            </div>
+
+
+            <div class="case-card" style="--d1:.36s;--d2:.44s;--d3:.52s;--d4:.60s;--d5:.68s">
+                <div class="case-img">
+                    <img src="assests/IRCTC.png" alt="IRCTC Rail Connect">
+                    <div class="case-placeholder"><span class="ph-emoji">🚂</span><span class="ph-text">Add cover
+                            image</span></div>
+                    <div class="case-img-fade"></div>
+                </div>
+                <div class="case-body">
+
+                    <h3>IRCTC Rail Connect — Redesign</h3>
+                    <p class="case-desc">Redesigned the IRCTC Rail Connect app to simplify ticket booking and reduce
+                        friction. Analyzed real user reviews to uncover pain points, then developed clearer interaction
+                        flows and improved interface guidance.</p>
+                    <div class="case-pills"><span class="pill">Usability Analysis</span><span
+                            class="pill">Wireframes</span><span class="pill">User Flows</span></div>
+                    <a class="case-link" href="https://www.behance.net/gallery/250617515/IRCTC-Rail-Connect">View case
+                        study →</a>
+                </div>
+            </div>
+
+
+            <div class="case-card" style="--d1:.30s;--d2:.38s;--d3:.46s;--d4:.54s;--d5:.62s">
+
+                <div class="case-img">
+                    <img src="assests/new skewhead cover.png" alt="Shewhead">
+                    <div class="case-placeholder"><span class="ph-emoji">👟</span><span class="ph-text">Add cover
+                            image</span></div>
+                    <div class="case-img-fade"></div>
+                </div>
+                <div class="case-body">
+
+                    <h3>Shewhead — Shoe Shopping App</h3>
+                    <p class="case-desc">Designed a mobile e-commerce shoe app focused on improving product discovery
+                        and seamless purchasing. Conducted user research, built information architecture, and created
+                        interactive prototypes with strong visual hierarchy.</p>
+                    <div class="case-pills"><span class="pill">User Research</span><span class="pill">IA</span><span
+                            class="pill">Prototyping</span><span class="pill">Figma</span></div>
+                    <a class="case-link" href="https://www.behance.net/gallery/250620215/Shewhead">View case study →</a>
+                </div>
+            </div>
+
+            <div class="case-card" style="--d1:.36s;--d2:.44s;--d3:.52s;--d4:.60s;--d5:.68s">
+                <div class="case-img">
+                    <img src="assests/iwatch.png" alt="4th Case Study">
+                    <div class="case-placeholder"><span class="ph-emoji">📱</span><span class="ph-text">Add cover
+                            image</span></div>
+                    <div class="case-img-fade"></div>
+                </div>
+                <div class="case-body">
+
+                    <h3>iwatch Ui Design</h3>
+                    <p class="case-desc">Experience the future of wearable interfaces with our modern iWatch UI
+                        collection.
+                        Crafted with precision to deliver elegant, intuitive, and seamless user experiences.Clean
+                        layouts, smooth interactions, and pixel-perfect details in every component.</p>
+                    <div class="case-pills"><span class="pill">UX Research</span><span class="pill">Hi-Fi UI</span><span
+                            class="pill">Figma</span></div>
+                    <a class="case-link" href="https://www.behance.net/gallery/251354371/iwatch-Ui-Design">View case study →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills">
+        <div class="section-header reveal">
+            <p class="section-label">Expertise</p>
+            <h2 class="section-title">Skills</h2>
+            <p class="section-sub">Proficiency across UX, UI, and front-end</p>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact">
+        <div class="section-header reveal">
+            <p class="section-label">Get in Touch</p>
+        </div>
+        <div class="contact-hero reveal">
+            <h2 class="section-title">Let's <span class="gradient-text">Work Together</span></h2>
+            <p>Open to internships, freelance, and full-time UX/UI roles. Whether you need a fresh design perspective or
+                a dedicated collaborator — I'd love to hear from you.</p>
+
+            <!-- Email pill -->
+            <a class="email-pill" href="mailto:prachipatel47506@gmail.com">
+                <div class="e-icon">✉️</div>
+                <div>
+                    <div class="e-label">Drop me a line</div>
+                    <div class="e-addr">prachipatel47506@gmail.com</div>
+                </div>
+            </a>
+
+
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+        <div class="footer-inner">
+
+            <!-- Top: brand + social profiles -->
+            <div class="footer-top">
+
+                <div class="footer-brand reveal">
+                    <div class="f-logo">PRACHI PATEL</div>
+                    <div class="f-role">UX/UI Designer &amp; Interaction Expert</div>
+                    <div class="f-desc">Crafting clean, intuitive digital experiences through research-driven design,
+                        thoughtful interaction patterns, and pixel-perfect visual execution. Currently pursuing BE in
+                        Computer Engineering at LDRP Institute, Gujarat.</div>
+                    <div class="f-contact-info">
+                        <div class="f-info-row"><span class="f-info-icon">📞</span><a href="tel:+919427680375">+91
+                                9427680375</a></div>
+                        <div class="f-info-row"><span class="f-info-icon">📍</span><span>Gandhinagar, Gujarat
+                                &nbsp;·&nbsp;
+                                <span class="avail-badge remote">Remote</span> &amp; <span
+                                    class="avail-badge onsite">On-site</span></span></div>
+                    </div>
+                </div>
+
+                <div class="footer-social reveal">
+                    <h4>Find me on</h4>
+                    <div class="f-social-links">
+                        <a class="f-social-link" href="https://www.linkedin.com/in/prachi-patel-b013a3357/"
+                            target="_blank">
+                            <div class="f-social-icon li-bg">💼</div>
+                            <div>
+                                <div class="f-social-name">LinkedIn</div>
+                                <div class="f-social-handle">linkedin.com/in/prachipatel</div>
+                            </div>
+                        </a>
+                        <a class="f-social-link" href="https://www.behance.net/prachipatel1609" target="_blank">
+                            <div class="f-social-icon be-bg">🎨</div>
+                            <div>
+                                <div class="f-social-name">Behance</div>
+                                <div class="f-social-handle">behance.net/prachipatel</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom: copyright + back to top -->
+            <div class="footer-bottom">
+
+                <a class="back-to-top" href="#hero">
+                    <span class="btt-arrow">↑</span> Back to top
+                </a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
