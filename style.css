@@ -94,7 +94,7 @@ nav {
 }
 
 .nav-resume:hover {
-    border-color:#a78bfa ; 
+    border-color: #a78bfa;
     color: #0a0a0f;
     transform: translateY(-1px)
 }
@@ -498,8 +498,8 @@ section {
 }
 
 .avatar-frame {
-    width: 260px;
-    height: 260px;
+    width: 320px;
+    height: 320px;
     border-radius: 24px;
     background: var(--bg4);
     border: 1px solid var(--border);
@@ -509,6 +509,18 @@ section {
     font-size: 5.5rem;
     position: relative;
     margin: 0 auto
+}
+
+.avatar-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    /* fills box without distortion */
+    object-position:center bottom;
+    /* keeps face visible */
+    display: block;
+    border: 2px;
+    border-radius: 9%;
 }
 
 .avatar-ring {
@@ -1252,7 +1264,7 @@ footer {
 
     .case-img {
         height: 190px;
-        
+
     }
 
     .hero-sub br {
